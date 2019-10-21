@@ -1,24 +1,16 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
+	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true,
-		"autoAudits": false
+		"newFeature": true
 	},
 	"compileType": "game",
-	"libVersion": "2.8.3",
+	"libVersion": "1.9.94",
 	"appid": "wx6ac3f5090a6b99c5",
-	"projectname": "flappybird",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": true,
+	"projectname": "flappyBird",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -36,5 +28,6 @@
 			"current": -1,
 			"list": []
 		}
-	}
+	},
+	"isGameTourist": true
 }
