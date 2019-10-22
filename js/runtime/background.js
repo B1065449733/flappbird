@@ -12,8 +12,5 @@ export class Background extends Sprite{
     const height = DataStore.getInstance().canvas.height;
     // 重写父类的构造方法，初始化其中的数据
     super(img,0,0,img.width,img.height,0,0,width,height);
-    this.landX = 0; // 地板实际X坐标 
   }
-
-
 }

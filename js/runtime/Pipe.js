@@ -6,9 +6,15 @@ import { DataStore } from "../base/DataStore.js";
 
 
 export class Pipe extends Sprite{
-    constructor(img,top){
-        const w = DataStore.getInstance().canvas.width;
-        super(img,0,0,img.width,img.height,w,0,img.width,img.height);
-        this.top = top;
-    }
+  constructor(img,top){
+    const w = DataStore.getInstance().canvas.width;
+    super(img,0,0,img.width,img.height,w,0,img.width,img.height);
+    this.top = top;
+  }
+
+  draw(){
+    this.x -= 2;
+    super.draw();
+  }
+
 }

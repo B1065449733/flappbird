@@ -11,8 +11,8 @@ export class Main{
   constructor(){
     console.log('游戏开始了');
     // 初始化画布
-    // this.canvas = document.getElementById('game');
-    this.canvas = wx.createCanvas();
+    this.canvas = document.getElementById('game');
+    // this.canvas = wx.createCanvas();
     this.ctx = this.canvas.getContext('2d');
     // 初始化资源加载器
     this.loader = new ResourceLoader();
@@ -45,10 +45,10 @@ export class Main{
     // 模拟画背景图
     // new Background().draw()
     // new Land().draw()
-    this.dataStore.set('background',new Background())
-                      .set('land',new Land())
-                      .set('pipes',[])
-                      .set('birds', new Birds())
+    this.dataStore.set('background', new Background())
+                  .set('land', new Land())
+                  .set('pipes', [])
+                  .set('birds', new Birds())
     // 先创建一组水管
     this.director.createPipes();
     // 开始运行
